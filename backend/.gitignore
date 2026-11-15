@@ -2,3 +2,46 @@
 venv/
 __pycache__/
 *.pyc
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Python testing and coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Vite build output
+frontend/dist/
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
