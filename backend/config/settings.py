@@ -33,11 +33,11 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "True").lower() == "true"
 
+
 ALLOWED_HOSTS = os.getenv(
     "ALLOWED_HOSTS",
     "localhost,127.0.0.1"
 ).split(",")
-
 
 # Application definition
 
@@ -68,10 +68,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://food-distribution-web-1.onrender.com/",
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://food-disdistribution-web-1.onrender.com",
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "https://food-distribution-web-1.onrender.com",
+]
+
 ROOT_URLCONF = 'config.urls'
 
 REST_FRAMEWORK = {
@@ -79,10 +84,7 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
 }
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
+
 
 TEMPLATES = [
     {
