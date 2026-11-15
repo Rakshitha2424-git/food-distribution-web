@@ -34,10 +34,11 @@ if not SECRET_KEY:
 DEBUG = os.getenv("DEBUG", "True").lower() == "true"
 
 
-ALLOWED_HOSTS = os.getenv(
-    "ALLOWED_HOSTS",
-    "localhost,127.0.0.1"
-).split(",")
+ALLOWED_HOSTS = [
+    "food-distribution-web.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 # Application definition
 
