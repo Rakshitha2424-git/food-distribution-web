@@ -69,6 +69,9 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://food-distribution-web-1.onrender.com/",
+]
 ROOT_URLCONF = 'config.urls'
 
 REST_FRAMEWORK = {
