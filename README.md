@@ -1,5 +1,9 @@
 # 🍱 FoodBridge – Food Donation and Redistribution Platform
 
+🚀 Visit FoodBridge – Live Application - https://food-distribution-web-1.onrender.com/
+
+FoodBridge is deployed and accessible online. Click the link above to explore the application.
+
 FoodBridge is a web-based food donation and redistribution platform that connects food donors with NGOs. It helps reduce food waste by making surplus food available to organizations that can distribute it to people in need.
 
 The platform provides separate dashboards for donors, NGOs, and administrators, making food donation and request management easier and more organized.
